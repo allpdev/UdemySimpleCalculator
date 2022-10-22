@@ -21,18 +21,42 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sumButton(_ sender: Any) {
+        if let firstNumber = Int(firstText.text!) {
+            if let secondNumber = Int(secondText.text!) {
+                let result = firstNumber + secondNumber
+                resultLabel.text = String(result)
+            }
+        }
     }
     
     
     @IBAction func minusButton(_ sender: Any) {
+        if let firstNumber = Int(firstText.text!) {
+            if let secondNumber = Int(secondText.text!) {
+                let result = firstNumber - secondNumber
+                resultLabel.text = String(result)
+            }
+        }
     }
     
     
     @IBAction func multiplyButton(_ sender: Any) {
+        if let firstNumber = Int(firstText.text!) {
+            if let secondNumber = Int(secondText.text!) {
+                let result = firstNumber * secondNumber
+                resultLabel.text = String(result)
+            }
+        }
     }
     
     
     @IBAction func divideButton(_ sender: Any) {
+        if let firstNumber = Int(firstText.text!) {
+            if let secondNumber = Int(secondText.text!) {
+                let result = firstNumber / secondNumber
+                resultLabel.text = String(result)
+            }
+        }
     }
     
 }
