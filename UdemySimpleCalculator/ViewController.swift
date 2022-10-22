@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //TEXT FİELD & LABEL
     @IBOutlet weak var firstText: UITextField!
     @IBOutlet weak var secondText: UITextField!
     
@@ -17,9 +18,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
+    
+    //BUTTON FUNC
     @IBAction func sumButton(_ sender: Any) {
         if let firstNumber = Int(firstText.text!) {
             if let secondNumber = Int(secondText.text!) {
